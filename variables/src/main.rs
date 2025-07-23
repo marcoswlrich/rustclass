@@ -101,4 +101,29 @@ fn main() {
     // imprimir de forma mais bonita
 
     println!("{seasons:#?}");
+
+    // imprimir na tela rapido para ajudar no desenvolvimento
+
+    dbg!(seasons);
+
+    // tuplas
+
+    let empresa = ("Molly", 32, "Marketing");
+    let (name, idade, departamento) = empresa;
+
+    println!("Name: {name}, idade: {idade}, departamento: {departamento}");
+
+    println!("{empresa:#?}");
+
+    // ranges --- intervalos
+
+    let numeros = 1..31; // dessa forma sera 1 ao 30, pois excluiu o ultimo numero
+
+    let month_days = 1..=31; // dessa forma 1 ao 31
+
+    // forma de uso ranges
+
+    for numbers in numeros {
+        println!("{numbers}");
+    }
 }
